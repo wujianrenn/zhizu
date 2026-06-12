@@ -58,7 +58,7 @@ new "Last updated" date.
 
 If you have any questions about this privacy policy, contact:
 
-- Email: `your-email@example.com` _(replace with your real contact email)_
+- Email: `wujianrenn@gmail.com` _(replace with your real contact email)_
 
 This policy is provided in English and Simplified Chinese. See `PrivacyPolicy.md`
 for the Chinese version.

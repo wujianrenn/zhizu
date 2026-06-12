@@ -51,6 +51,6 @@ _最后更新：2026 年 6 月 9 日_
 
 如对本隐私政策有任何疑问，请联系：
 
-- 邮箱：`your-email@example.com` _（请替换为你真实的联系邮箱）_
+- 邮箱：`wujianrenn@gmail.com` _（请替换为你真实的联系邮箱）_
 
 本政策提供简体中文与英文版本，英文版见 `PrivacyPolicy.en.md`。
