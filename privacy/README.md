@@ -4,43 +4,51 @@ Static privacy policy pages for App Store Connect, hosted on GitHub Pages.
 
 **Local path in the monorepo:** `zhizu/privacy/` (this folder).
 
-## Before you push
+## Source layout
 
-Search and replace `REPLACE_WITH_YOUR_EMAIL@example.com` in `index.html` and `en.html` with your real contact email.
+```
+privacy/
+  zh/index.html    # Simplified Chinese (source)
+  en/index.html    # English (source)
+  README.md
+```
 
-## Deploy to GitHub Pages
+## Deploy to GitHub Pages (`mybook--privacy`)
 
-The GitHub repo name can stay **`zhizu-privacy`** even though these files live under `zhizu/privacy/` locally.
+The live site is served from the repo root. When deploying, copy source files to these filenames:
 
-1. Create a new **public** GitHub repository named `zhizu-privacy` (e.g. `wujianrenn/zhizu-privacy`).
-2. Push **only the contents of this `privacy/` folder** to the `main` branch (repo root — not the whole `zhizu` monorepo).
-3. In the repo: **Settings → Pages → Build and deployment**
-   - Source: **Deploy from a branch**
-   - Branch: `main` / **/ (root)**
-4. After a minute or two, the site will be live at:
+| Source (monorepo)       | Deployed (repo root) |
+|-------------------------|----------------------|
+| `privacy/zh/index.html` | `index.html`         |
+| `privacy/en/index.html` | `en.html`            |
 
-   ```
-   https://<your-github-username>.github.io/zhizu-privacy/
-   ```
+Example from the monorepo root:
 
-   Example: `https://wujianrenn.github.io/zhizu-privacy/`
+```bash
+cp privacy/zh/index.html /path/to/mybook--privacy/index.html
+cp privacy/en/index.html /path/to/mybook--privacy/en.html
+```
 
-> **Tip:** From this folder, run `git init && git add . && git remote add origin …` in a separate clone, or copy these three files into your existing `zhizu-privacy` repo.
+Then commit and push `mybook--privacy` to `main`. Pages will be live at:
+
+```
+https://wujianrenn.github.io/mybook--privacy/
+```
+
+## Internal links
+
+Source files use **deployment-relative** hrefs (same as on GitHub Pages):
+
+- Chinese (`zh/index.html`): links to `en.html`
+- English (`en/index.html`): links to `index.html`
+
+Do **not** use `../en/index.html` in the HTML — that path only exists in the monorepo, not on Pages.
 
 ## App Store Connect
 
-Paste the URL above into **App Store Connect → your app → App Information → Privacy Policy URL** (隐私政策网址).
+| Locale              | Privacy Policy URL |
+|---------------------|--------------------|
+| 简体中文 (zh-Hans)  | `https://wujianrenn.github.io/mybook--privacy/` |
+| English (en-US)     | `https://wujianrenn.github.io/mybook--privacy/` or `https://wujianrenn.github.io/mybook--privacy/en.html` |
 
-- Default (Simplified Chinese): `https://<username>.github.io/zhizu-privacy/`
-- English: `https://<username>.github.io/zhizu-privacy/en.html`
-
-Either URL is fine; the Chinese page is the default `index.html`.
-
-## Files
-
-| File | Purpose |
-|------|---------|
-| `index.html` | Simplified Chinese privacy policy |
-| `en.html` | English privacy policy |
-
-No build step or external dependencies required.
+Either English URL is valid; the pages cross-link to each other.
