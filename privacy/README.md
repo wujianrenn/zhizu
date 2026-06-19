@@ -13,27 +13,29 @@ privacy/
   README.md
 ```
 
-## Deploy to GitHub Pages (`mybook--privacy`)
+## Deploy to GitHub Pages ([`wujianrenn/apps-privacy`](https://github.com/wujianrenn/apps-privacy))
 
-The live site is served from the repo root. When deploying, copy source files to these filenames:
+Live pages live under the **`zhizu/`** subfolder in the shared public repo (app source stays private). Copy source files when updating:
 
-| Source (monorepo)       | Deployed (repo root) |
-|-------------------------|----------------------|
-| `privacy/zh/index.html` | `index.html`         |
-| `privacy/en/index.html` | `en.html`            |
+| Source (monorepo)       | Deployed (`apps-privacy/zhizu/`) |
+|-------------------------|-----------------------------------|
+| `privacy/zh/index.html` | `index.html`                      |
+| `privacy/en/index.html` | `en.html`                         |
 
 Example from the monorepo root:
 
 ```bash
-cp privacy/zh/index.html /path/to/mybook--privacy/index.html
-cp privacy/en/index.html /path/to/mybook--privacy/en.html
+cp privacy/zh/index.html /path/to/apps-privacy/zhizu/index.html
+cp privacy/en/index.html /path/to/apps-privacy/zhizu/en.html
 ```
 
-Then commit and push `mybook--privacy` to `main`. Pages will be live at:
+Then commit and push `apps-privacy` to `main`. Pages will be live at:
 
 ```
-https://wujianrenn.github.io/mybook--privacy/
+https://wujianrenn.github.io/apps-privacy/zhizu/
 ```
+
+See the [apps-privacy README](https://github.com/wujianrenn/apps-privacy/blob/main/README.md) for Pages settings and other apps.
 
 ## Internal links
 
@@ -48,7 +50,5 @@ Do **not** use `../en/index.html` in the HTML — that path only exists in the m
 
 | Locale              | Privacy Policy URL |
 |---------------------|--------------------|
-| 简体中文 (zh-Hans)  | `https://wujianrenn.github.io/mybook--privacy/` |
-| English (en-US)     | `https://wujianrenn.github.io/mybook--privacy/` or `https://wujianrenn.github.io/mybook--privacy/en.html` |
-
-Either English URL is valid; the pages cross-link to each other.
+| 简体中文 (zh-Hans)  | `https://wujianrenn.github.io/apps-privacy/zhizu/` |
+| English (en-US)     | `https://wujianrenn.github.io/apps-privacy/zhizu/en.html` |

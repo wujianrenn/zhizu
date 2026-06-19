@@ -10,6 +10,7 @@ struct AssetDetailView: View {
     @Bindable var asset: Asset
 
     @State private var showingEdit = false
+    @State private var showingEditPrice = false
     @State private var showingDeleteAlert = false
     @State private var showingRetireSheet = false
 
@@ -60,6 +61,9 @@ struct AssetDetailView: View {
             }
         }
         .sheet(isPresented: $showingEdit) { AssetFormView(existing: asset) }
+        .sheet(isPresented: $showingEditPrice) {
+            EditPriceSheet(asset: asset)
+        }
         .sheet(isPresented: $showingRetireSheet) {
             RetireAssetSheet(asset: asset)
         }
@@ -89,6 +93,24 @@ struct AssetDetailView: View {
                 PillLabel(text: "\(asset.daysOwned) 天",
                           systemImage: "clock.fill",
                           background: heroTextColor.opacity(0.22), foreground: heroTextColor)
+            }
+            HStack {
+                Spacer()
+                Button {
+                    showingEditPrice = true
+                    Haptics.tap()
+                } label: {
+                    HStack(spacing: 4) {
+                        Text(Formatters.price(asset.purchasePrice))
+                            .font(.title3.weight(.semibold))
+                        Image(systemName: "pencil.circle.fill")
+                            .font(.caption)
+                            .opacity(0.75)
+                    }
+                    .foregroundStyle(heroTextColor)
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel("修改购入价格")
             }
         }
         .frame(maxWidth: .infinity)

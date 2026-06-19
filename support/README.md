@@ -13,20 +13,20 @@ support/
   README.md
 ```
 
-## Deploy to GitHub Pages (`mybook--privacy`)
+## Deploy to GitHub Pages ([`wujianrenn/apps-privacy`](https://github.com/wujianrenn/apps-privacy))
 
-Copy source files to the repo root alongside the privacy pages:
+Copy source files into the **`zhizu/`** subfolder alongside the privacy pages:
 
-| Source (monorepo)        | Deployed (repo root) |
-|--------------------------|----------------------|
-| `support/zh/index.html`  | `support.html`       |
-| `support/en/index.html`  | `support-en.html`    |
+| Source (monorepo)        | Deployed (`apps-privacy/zhizu/`) |
+|--------------------------|-----------------------------------|
+| `support/zh/index.html`  | `support.html`                    |
+| `support/en/index.html`  | `support-en.html`                 |
 
 Example:
 
 ```bash
-cp support/zh/index.html /path/to/mybook--privacy/support.html
-cp support/en/index.html /path/to/mybook--privacy/support-en.html
+cp support/zh/index.html /path/to/apps-privacy/zhizu/support.html
+cp support/en/index.html /path/to/apps-privacy/zhizu/support-en.html
 ```
 
 ## Internal links
@@ -40,5 +40,5 @@ Source files use **deployment-relative** hrefs:
 
 | Locale              | Support URL |
 |---------------------|-------------|
-| 简体中文 (zh-Hans)  | `https://wujianrenn.github.io/mybook--privacy/support.html` |
-| English (en-US)     | `https://wujianrenn.github.io/mybook--privacy/support-en.html` |
+| 简体中文 (zh-Hans)  | `https://wujianrenn.github.io/apps-privacy/zhizu/support.html` |
+| English (en-US)     | `https://wujianrenn.github.io/apps-privacy/zhizu/support-en.html` |

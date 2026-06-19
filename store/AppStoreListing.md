@@ -60,12 +60,12 @@ cost, and **daily cost (日均成本)**, which is a personal‑finance framing.
 
 **Support URL**
 ```
-https://wujianrenn.github.io/mybook--privacy/support.html
+https://wujianrenn.github.io/apps-privacy/zhizu/support.html
 ```
 
 **Marketing/隐私政策 URL**
 ```
-https://wujianrenn.github.io/mybook--privacy/
+https://wujianrenn.github.io/apps-privacy/zhizu/
 ```
 
 ---
@@ -113,12 +113,12 @@ asset,tracker,daily cost,minimalist,wishlist,budget,inventory,expense,belongings
 
 **Support URL**
 ```
-https://wujianrenn.github.io/mybook--privacy/support-en.html
+https://wujianrenn.github.io/apps-privacy/zhizu/support-en.html
 ```
 
 **Marketing / Privacy Policy URL**
 ```
-https://wujianrenn.github.io/mybook--privacy/en.html
+https://wujianrenn.github.io/apps-privacy/zhizu/en.html
 ```
 
 ---

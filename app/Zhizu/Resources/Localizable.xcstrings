@@ -1651,6 +1651,26 @@
         }
       }
     },
+    "修改购入价格" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit Purchase Price"
+          }
+        }
+      }
+    },
+    "价格须大于 0" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Price must be greater than 0"
+          }
+        }
+      }
+    },
     "自定义专属的双色 / 三色渐变，整个 App 即时生效。" : {
       "localizations" : {
         "en" : {

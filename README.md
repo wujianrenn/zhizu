@@ -62,19 +62,21 @@ zhizu/
 
 本地文件位于 **`privacy/`**。上线步骤见 [`privacy/README.md`](privacy/README.md)。
 
-简要说明：将 **`privacy/` 文件夹内的内容**（不是整个 monorepo）推送到 GitHub 仓库 `zhizu-privacy`，启用 Pages 后得到：
+简要说明：将 `privacy/` 与 `support/` 源文件复制到公开仓库 [`wujianrenn/apps-privacy`](https://github.com/wujianrenn/apps-privacy) 的 **`zhizu/`** 子目录后推送 `main`（详见 [`privacy/README.md`](privacy/README.md)）。Pages 地址示例：
 
 ```
-https://wujianrenn.github.io/zhizu-privacy/
+https://wujianrenn.github.io/apps-privacy/zhizu/
 ```
 
-在 App Store Connect 的「隐私政策网址」中填入上述 URL。
+在 App Store Connect 的「隐私政策网址」中填入上表 URL（见 [`store/AppStoreListing.md`](store/AppStoreListing.md)）。
 
 ---
 
 ## 🚀 上架 App Store
 
 发布材料在 [`store/`](store/) 目录，从 [`store/RELEASE_CHECKLIST.md`](store/RELEASE_CHECKLIST.md) 开始按步骤操作。
+
+通用上架知识库见 `~/.cursor/skills/app-store-ios-submission/`（Cursor Agent Skill + 参考文档，可复用于其他 App）。
 
 ---
 
